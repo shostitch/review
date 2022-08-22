@@ -5,5 +5,10 @@
   <p>内容</p>
   <%= f.text_area :body %>
 
+  <h4>画像</h4>
+  <%= f.file_field :image, accept: "image/*" %>
+  
+  <%= f.submit '投稿' %>
+
   <%= f.submit "編集を終える" %>
 <% end %>
